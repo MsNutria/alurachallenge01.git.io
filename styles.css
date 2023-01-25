@@ -1,12 +1,15 @@
-html{
-    height: 100%;
+*{
+    margin: 0px;/*si quiero la maqueta (cajas sin contenidos) necesito que al menos unno de estos no este en 0*/
+    padding: 0px;
+    box-sizing: border-box;/*para que las cajas no se desborden unas con otras*/
 }
 
-body{
+body {
     height: 100%;
-    background-image: linear-gradient(#D8743F, #E01703);
+    background-image: linear-gradient(#D8743F 80%,#E01703);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 0em;
@@ -20,7 +23,10 @@ body{
 
 .contenedor-central{
     display: flex;
-    flex-direction: column;
+    flex-flow: row nowrap;
+
+    width: 1000px;
+    margin: 0 10px 20px 10px;
 }
 
 .contenedor-izq{
@@ -30,7 +36,7 @@ body{
 
     display: flex;
     flex-flow: column nowrap;
-    margin: 20px;
+    margin-right: 20px;
 }
 
 .logo{
@@ -43,6 +49,7 @@ img{
 }
 
 .area_texto{
+    width: 695px;
     height: 65%;
     padding-left: 10%;
     display: flex;
@@ -62,12 +69,148 @@ img{
     color: #052051;
 }
 
-    .textIzq::placeholder{
-        color: rgba(255, 255, 255, 0.7);
+.textIzq::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.warnings{
+    height: 5%;/**/
+    /*background-color: aquamarine;/**/
+}
+    
+    .warning{
+        padding-left: 14%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        color: #052051;
+        opacity: 0.8;
+        display: flex;
     }
 
-.warning{
-    padding: 14%;
-    font-size: 0.8rem;
+.contenedorBotonesIzq{
+    height: 15%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-encriptar{
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    padding: 6px;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    background-color: #89D202;
+    opacity: 0.8;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-descencriptar{
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    padding: 6px;
+    font-family:'Poppins', sans-serif;
     color: #052051;
+    background-color: #D8DFE8;
+    opacity: 0.8;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover,.btn-descencriptar:hover{
+    transform: scale(1.04);
+    box-shadow: 1px 1px 8px #052051;
+    transition: 0.5 transform;
+}
+
+/*Lado derecho texto*/
+
+.contenedor-der{
+    flex: 1 1 auto;
+
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.salidaTexto{
+    height: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    display: none; /**/
+}
+
+.textDer{
+    width: 90%;
+    height: 90%;
+
+    padding: 10px 10px 10px 10px;
+    border-style: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color:rgba(255, 255, 255, 0.741);
+
+}
+
+.contenedorBotonesDer{
+    height: 15%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.btn-copiar{
+    width: 200px;
+    height: 50px;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    background-color: #9ABD14;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+ /*Contenido visible cuando no hay texto encriptado*/
+
+ .sinMensaje{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .img-pochita{
+    width: 304px;
+    height: 304px;
+ }
+
+.textoSinMensaje1{
+    margin-top: 40px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.textoSinMensaje2{
+    margin-top: 15px;
+    color: #1A1B1C;
+    font-size: 10px;
 }
