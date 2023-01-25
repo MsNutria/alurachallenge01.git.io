@@ -11,53 +11,46 @@
 
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <div class="header_img">
-                <img src="img/Top.jpg" alt="Logo-Alura-Green">
-            </div>
-        </div>
-    </header>
-
     <main>
-        <div class="contenedor">
-            <div class="encriptador">
-                <form class="encriptador_estilo">
-                    <div class="text_in">
-                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aquí" required></textarea>
-                        <div class="text_in_info">
-                            <div class="info">
-                                <img src="img/Group.png" alt="Warning">
-                                <p id="warning">Solo se permiten letras minúsculas y sin acentos</p>
-                                <div class="botones">
-                                    <input onclick="demoVisibility()" type="button" value="¡Encriptar!">
-                                    <input type="button" value="Desencriptar">
-                                </div>
-                            </div>
-                        </div>
-                    </div>      
-                </form>
-            </div>
-        </div>
-
-        <div class="texto-imagen">
-            <div class="out_contenido">
-                <div class="content" id="default">
-                    <div>
-                       <img src="img/pochita.webp" alt="pochitauwu"> 
-                        <div>
-                            <p>Ningún mensaje fue encontrado</p>
-                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
-                            <div class="contenido-invisible" id="result">
-                                <textarea name="" id="encriptado" cols="50" rows="30"></textarea>
-                                <button id="copiar">Copiar</button>
-                            </div>
-                        </div>
+        <div class="contenedor-principal">
+            <div class="contenedor-central">
+                <div class="contenedor-izq">
+                    <div class="logo">
+                        <img src="img/Top.jpg" alt="imagen_logo">
                     </div>
+                    <div class="area_texto">
+                        <textarea class="textIzq" name="TextoEncriptador" id="textIzq" cols="30" rows="13" placeholder="Ingresa el texto aquí" required></textarea>
+                    </div>
+                    <div class="warning">
+                        <img src="img/Group.png" alt="excalamation"><p class="warning">Solo se permiten letras minúsculas y sin acentos</p>
+                    </div>
+
+                    <div class="contenedorBotonesIzq">
+                        <input type="button" value="¡Encriptar!" class="btn-encriptar">
+                        <input type="button" value="Descencriptar" class="btn-descencriptar">
+                    </div>
+                </div>
+
+                <div class="contenedor-der">
+                    <div id="salidaTexto" class="salidaTexto">
+                        <textarea name="" id="textDer" class="textDer" cols="30" rows="7"></textarea>
+                    </div>
+
+                    <div id="contenedorBotonesDer" class="contenedorBotonesDer">
+                        <input type="button" value="Copiar" class="btn-copiar">
+                    </div>
+
+                    <!--Contenido visible siki cuando no hay texto-->
+                    <div id="sinMensaje" class="sinMensaje">
+                        <img src="img/pochita.webp" alt="pochita">
+                        <p class="textoSinMensaje1">Ningún mensaje<br>fue encontrado</p>
+                        <p class="textoSinMensaje2">Ingresa el texto que desees encriptar o descencriptar</p>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </main>
+
 
     <script src="app.js"></script>
 
