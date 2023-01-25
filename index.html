@@ -19,10 +19,10 @@
                         <img src="img/Top.jpg" alt="imagen_logo">
                     </div>
                     <div class="area_texto">
-                        <textarea class="textIzq" name="TextoEncriptador" id="textIzq" cols="30" rows="13" placeholder="Ingresa el texto aquí" required></textarea>
+                        <textarea class="textIzq" name="TextoEncriptador" cols="30" rows="13" placeholder="Ingresa el texto aquí" required id="textIzq"></textarea>
                     </div>
-                    <div class="warning">
-                        <img src="img/Group.png" alt="excalamation"><p class="warning">Solo se permiten letras minúsculas y sin acentos</p>
+                    <div class="warnings">
+                        <p class="warning"><i class="fa-solid fa-circle-exclamation"></i>Solo se permiten letras minúsculas y sin acentos</p>
                     </div>
 
                     <div class="contenedorBotonesIzq">
@@ -36,15 +36,15 @@
                         <textarea name="" id="textDer" class="textDer" cols="30" rows="7"></textarea>
                     </div>
 
-                    <div id="contenedorBotonesDer" class="contenedorBotonesDer">
-                        <input type="button" value="Copiar" class="btn-copiar">
-                    </div>
-
                     <!--Contenido visible solo cuando no hay texto-->
                     <div id="sinMensaje" class="sinMensaje">
-                        <img class="img-pochita" src="img/pochita.webp" alt="pochita">
-                        <p class="textoSinMensaje1">Ningún mensaje<br>fue encontrado</p>
-                        <p class="textoSinMensaje2">Ingresa el texto que desees encriptar o descencriptar</p>
+                        <img class="img-pochita" src="img/pochita.webp" alt="pochita" id="img-pochita">
+                        <p class="textoSinMensaje1" id="textoSinMensaje1">Ningún mensaje<br>fue encontrado</p>
+                        <p class="textoSinMensaje2" id="textoSinMensaje2">Ingresa el texto que desees encriptar o descencriptar</p>
+                    </div>
+
+                    <div id="contenedorBotonesDer" class="contenedorBotonesDer">
+                        <input type="button" value="¡Copiar!" class="btn-copiar" id="copiar" onclick=copiar>
                     </div>
 
                 </div>
