@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador-Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="header_img">
+                <img src="img/Top.jpg" alt="Logo-Alura-Green">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_estilo">
+                    <div class="text_in">
+                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aquí" required></textarea>
+                        <div class="text_in_info">
+                            <div class="info">
+                                <img src="img/Group.png" alt="Warning">
+                                <p id="warning">Solo se permiten letras minúsculas y sin acentos</p>
+                                <div class="botones">
+                                    <input onclick="demoVisibility()" type="button" value="¡Encriptar!">
+                                    <input type="button" value="Desencriptar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </form>
+            </div>
+        </div>
+
+        <div class="texto-imagen">
+            <div class="out_contenido">
+                <div class="content" id="default">
+                    <div>
+                       <img src="img/pochita.webp" alt="pochitauwu"> 
+                        <div>
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                            <div class="contenido-invisible" id="result">
+                                <textarea name="" id="encriptado" cols="50" rows="30"></textarea>
+                                <button id="copiar">Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+    <footer>
+        <p>&copy 2023 Todos los derechos reservados por Margi Lorena Africano Lagos | Oracle+AluraLatam. </p>
+    </footer>
+
+</body>
+</html>
