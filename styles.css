@@ -251,9 +251,10 @@ footer{
     margin-bottom: 5vh;
 }
 
-.redes a img{
+.red, .redes a{
     width: 30px;
     height: 40px;
+    cursor: pointer;
 }
 
   
