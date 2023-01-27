@@ -257,4 +257,54 @@ footer{
     cursor: pointer;
 }
 
+@media screen and (max-width: 780px ) { 
+
+    .contenedor-central{
+        flex-flow: column nowrap;
+    }
+
+    .contenedor-izq{
+        margin: 20px 20px 20px 20px;
+    }
+
+    .area_texto{
+        width: 400px;
+    }
+
+    .contenedor-der{
+        padding-bottom: 25px;
+    }
+
+    .img-pochita{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px ) { 
+
+    .contenedor-central{
+        flex-flow: column nowrap;
+    }
+
+    .contenedor-izq{
+        margin: 20px 20px 20px 20px;
+    }
+
+    .area_texto{
+        width: 400px;
+    }
+
+    .contenedor-der{
+        padding-bottom: 25px;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+        width: 180px;
+        margin: 1px;
+    }
+
+    .img-pochita{
+        display: none;
+    }
+}
   
