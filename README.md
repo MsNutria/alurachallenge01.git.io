@@ -44,5 +44,5 @@ Las "llaves" de encriptación que se utilizaron son las siguiente:
 ---
 
 [**Ir a la página** ✌](#)
-[**Ir a la maquetización Figma del diseño https://www.figma.com/file/o9vZYKmB0p6xmEdb3EYYEH/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?node-id=0%3A1&t=dQfXxqfLCjsaIWPk-0** ✌](#)
+[**Ir a la maquetización Figma del diseño ** ✌](https://www.figma.com/file/o9vZYKmB0p6xmEdb3EYYEH/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?node-id=0%3A1&t=dQfXxqfLCjsaIWPk-0)
 ---
