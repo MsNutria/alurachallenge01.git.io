@@ -247,14 +247,35 @@ img{
 
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 5vh;
 }
 
-.red, .redes a{
+.designed{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.782);
+    font-style: italic;
+    text-align: center;
+}
+
+.nameD{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.01PX;  
+}
+
+.redes a{
     width: 30px;
     height: 40px;
     cursor: pointer;
+    padding: .7rem;
+    transition: all .5s;
+    
+}
+
+.legend{
+    font-size: 10px;
 }
 
 @media screen and (max-width: 780px ) { 
@@ -307,4 +328,13 @@ footer{
         display: none;
     }
 }
+
+/*1.- Acciones pendientes, arreglar el resultado en equipos 480px dado que el texto se queda muy pegado al borde
+
+2.- Arreglar redes sociales en pc y en pantallas
+
+3.- Arreglar el boton copiar para moviles porque no copia
+
+3.- Darle más estilos al footer*/
+
   
