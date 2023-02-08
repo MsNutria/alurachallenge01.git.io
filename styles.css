@@ -247,7 +247,7 @@ img{
 
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 5vh;
 }
 
