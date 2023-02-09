@@ -191,6 +191,7 @@ img{
     border: none;
     border-radius: 12px;
     cursor: pointer;
+    margin-top: 40px;
 }
 
  /*Contenido visible cuando no hay texto encriptado*/
@@ -225,10 +226,14 @@ img{
 }
 
 .encriptar-desencriptar{
+
     padding: 10px;
+    margin-bottom: 40px;
     font-weight: 400;
     font-size: 1.6rem;
     background: whitesmoke;
+    font-weight: bold;
+    
 }
 
 .resultado{
@@ -238,7 +243,9 @@ img{
     padding: 10px 10px 10px 10px;
     color: black;
     font-size: 1.5rem;
+    padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 .hide {
@@ -338,6 +345,14 @@ footer{
 
     .img-pochita{
         display: none;
+    }
+
+    .designed .nameD{
+        margin-left: 10px;
+    }
+
+    .legend{
+        margin-right: 10px;
     }
 }
 
